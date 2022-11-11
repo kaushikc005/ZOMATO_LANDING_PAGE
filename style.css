@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-weight:100;
+    color: white;
+}
+
+.myHero__Section{
+    background-image: url(/images/heroSectionBackground.png);
+    /* background-repeat: no-repeat; */
+    background-size:cover;
+    background-position: center;
+    min-height: 60vh;
+
+
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    height: 50px;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: white;
+}
+
+.navbar__menu_container{
+    display: flex;
+    gap: 20px;
+}
+
+.navbar__menu_container .userIcon{
+    height: 30px;
+    width: 30px;
+    border: 2px solid white;
+    border-radius:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero__Section_Container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    height: calc(60vh,60px);
+    font-size: 1.5rem;
+
+}
+
+.hero__Section_Logo{
+    width: 300px;
+}
+
+
+
+
+
+
+@media only screen and (max-width:500px)
+{
+    .navbar__menu_container .userIcon{
+        display: none;
+    }
+
+}
