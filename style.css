@@ -244,6 +244,99 @@
     background-image: url(/images/collection4.jpg);
 }
 
+.getTheApp__Container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fffbf7;
+    width:100% ;
+}
+.getTheApp__logo{
+    
+    display: flex;
+    justify-content: center;
+    
+    width: 20%; 
+}
+.getTheApp__Container .getTheApp__logo img{
+        width: 250px; 
+        height: 500px; 
+        object-fit: contain;    
+}
+
+.getTheApp__SemiContainer{
+    padding-left: 20px;
+    position: relative;
+    width: 500px;
+}
+.getTheApp__Text .getTheApp__Heading{
+
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.getTheApp__Text input{
+    margin-bottom: 20px;
+
+}
+.getTheApp__Text p{
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.getTheApp__Input{
+    margin-bottom: 10px;
+}
+
+.getTheApp__Input input{
+    width: 300px;
+    height: 50px;
+    border: 1px solid #e34e5d;
+    border-radius: 5px;
+}
+
+input[type="radio"]{
+    size: 100px;
+    height:18px; 
+    width:18px; 
+    /* vertical-align: middle; */
+    margin-right: 5px;
+    cursor: pointer;
+    accent-color:#e34e5d ;
+}
+
+.getTheApp__Text label{
+    margin-right: 40px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.getTheApp__Input .Share__Button{
+    width: 150px;
+    height: 50px;
+    border: 0px solid gray;
+    border-radius: 5px;
+    background-color: #ef4f5f;
+    color: white;
+    margin-left: 5px;
+    box-shadow: none;
+    cursor: pointer;
+
+}
+
+.getTheApp__DownloadLogo img{
+    width: 137px;
+    margin-bottom: 10px;
+}
+
+
+.getTheApp__DownloadLogo p{
+    margin-bottom: 10px;
+    color: gray;
+    font-size: 0.8rem;
+
+}
+
 
 
 @media only screen and (max-width:500px)
