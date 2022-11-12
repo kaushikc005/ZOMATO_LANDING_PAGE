@@ -1,0 +1,285 @@
+*{
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-weight:100;
+
+}
+
+.myHero__Section{
+    background-image: url(/images/heroSectionBackground.png);
+    /* background-repeat: no-repeat; */
+    background-size:cover;
+    background-position: center;
+    min-height: 60vh;
+
+
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    height: 50px;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: white;
+}
+
+.navbar__menu_container{
+    display: flex;
+    gap: 20px;
+}
+
+.navbar__menu_container .userIcon{
+    height: 25px;
+    width: 25px;
+    border: 2px solid white;
+    border-radius:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero__Section_Container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    height: calc(60vh,60px);
+    font-size: 1.8rem;
+
+}
+
+.hero__Section_Logo{
+    width: 300px;
+}
+
+.hero__Section_Catchphrase{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+    color: white;
+}
+
+
+.hero__Section_Input_Container{
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap:0px;
+    
+   
+
+}
+
+.input__location, .input__search{
+    border: none;
+    padding: 8px;
+    color: black;
+    outline: none;
+    width: 90%;
+}
+
+.input__location{
+    width: 25%;
+    border-right: 1px solid gray;
+    
+}
+
+.input__search{
+    width: 75%;
+}
+
+.our__Offerings{
+    margin: 10px auto;
+    padding: 15px;
+    width: 90%;
+    gap: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; 
+}
+
+.offer__Cards{
+    border: 0.5px solid gray;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.5s ease;
+
+   
+}
+
+.offer__Cards:hover{
+    cursor: pointer;
+    transform:scale(1.05,1.05)
+}
+
+.offer__Cards img{
+
+    height: 192px;
+    width: 360px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.item__Text{
+    color: black;
+   margin-left: 20px;
+}
+.item__Text h1{
+    font-size: 20px;
+    font-weight:500;
+}
+
+.item__Text p{    
+    font-size:16px;
+}
+
+/* .collections{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+     justify-content: center; 
+    
+} */
+.collections .heading{
+    margin: 3% 0 0 13%;
+    font-weight: 700;
+    font-size: 1.8rem;
+    
+}
+.collections__subheading{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 0 13%;
+    /* margin: 1% 0 0 13%; */
+}
+
+.collections__subheading span:last-child{
+    color: rgb(239, 79, 95);
+    cursor: pointer;
+}
+
+.collections__Cards{ 
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content:center;
+    gap:1rem;
+    margin: 1rem;
+    padding: 1rem;
+
+ 
+}
+
+
+.collections__Cards .card
+{
+    
+    position: relative;
+    width: 268px;
+    height: 320px;
+
+    border: 1px solid gray; 
+    border-radius: 10px;
+    overflow: hidden; 
+    
+    background-size: cover;
+    background-position: center ; 
+    
+}
+
+ .Collection__Text{
+    bottom:0;
+    color: white;
+    position: absolute;
+    /* padding-top:95%; */
+    margin-left: 6%;
+    font-size: 0.8rem;
+    
+}
+
+.gradient_overlay{
+    
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, black , transparent 30%);
+   
+}
+
+.collections__Cards .card__Item1{
+ background-image: url(/images/collection1.jpg);
+
+}
+
+.collections__Cards .card__Item2{
+    background-image: url(/images/collection2.jpg);
+}
+
+.collections__Cards .card__Item3{
+    background-image: url(/images/collection3.jpg);
+}
+
+.collections__Cards .card__Item4{
+    background-image: url(/images/collection4.jpg);
+}
+
+
+
+@media only screen and (max-width:500px)
+{
+    .navbar__menu_container .userIcon{
+        display: flex;
+    }
+
+    .navbar__menu_container a{
+        display: none;
+    }
+    
+
+    .hero__Section_Container{
+        /* height: 80vh; */
+    }
+    .hero__Section_Input_Container{
+        /* display: flex;  */
+        flex-direction: column;
+        background-color: transparent;
+        width: 100%;
+    }
+    .navbar{
+        padding: 15px;
+    }
+
+    .hero__Section_Catchphrase{
+        font-size: 20px;
+        width: 95%;
+    }
+
+    .input__location, .input__search{
+        padding: 10px;
+        margin-bottom: 10px;
+        border-radius: 10px;
+        width: 90%;
+    }
+
+}
