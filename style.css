@@ -339,6 +339,40 @@ input[type="radio"]{
 
 
 
+/* Explore Container */
+.Explore__Container{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    margin-left: 250px;
+    margin-top: 50px;
+    
+
+}
+
+.Explore__Container h1{
+    font-size: 2rem;
+    font-weight: 500;
+
+}
+
+.Explore__Container .item{
+    display: flex;
+    align-items: center;
+    width: 1050px;
+    height: 70px;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    padding: 25px;
+    margin: 20px 0;
+    font-size: 0.8rem;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+
 @media only screen and (max-width:500px)
 {
     .navbar__menu_container .userIcon{
