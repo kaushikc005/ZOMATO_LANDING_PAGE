@@ -341,15 +341,15 @@ input[type="radio"]{
 
 /* Explore Container */
 .Explore__Container{
-
+  
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 80%;
-    margin-left: 250px;
+    align-items: center;
+    width: 100%;
+      /* margin-left: 250px; */
     margin-top: 50px;
-    
-
+    padding-bottom: 30px;
 }
 
 .Explore__Container h1{
@@ -371,6 +371,133 @@ input[type="radio"]{
     justify-content: space-between;
     cursor: pointer;
 }
+
+
+.footer{
+    background-color: #f8f8f8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top:50px;
+}
+
+.footer__Logo
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 1020px;
+    margin-top: 50px;
+}
+
+.footer__Logo img
+{
+    width: 130px;
+
+}
+
+.country_language{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.footer__country,.footer__language
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 120px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin: 20px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.footer__country img{
+    width: 30px;
+    height: 30px;
+}
+
+
+.footer_items{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+
+.footer_items .item
+{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: start; */
+    align-items: flex-start;
+    
+}
+.footer_items .item img{
+    width: 130px;
+    margin: 5px;
+}
+
+.footer_items .item h1{
+    text-transform: uppercase;
+    margin:5px 40px 5px 0;
+
+}
+
+
+.footer_items .item a{
+    color: gray;
+    text-decoration: none; 
+    font-weight: 100;
+    margin: 5px;
+}
+
+
+.footer .footer_items .social
+{
+    display: flex;
+    flex-direction: column;
+} 
+
+.footer .footer_items .social i
+{
+   margin: 0 2px;
+   width: 20px;
+   height: 20px;
+   border: 1px solid transparent;
+   border-radius: 500%;
+   background:transparent;
+   /* overflow: hidden; */
+   cursor: pointer;
+} 
+hr{
+    border: 1px solid lightgray;
+    border-color:gray;
+    width: 1050px;
+    margin-top: 50px;
+}
+.footer .copyright{
+    width: 1050px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 1rem;
+    color: gray;
+    margin: 50px 0;
+}
+
+
+/* .footer hr{
+    margin: 80px 0 20px 0;
+    border-color: red;
+} */
+
 
 
 @media only screen and (max-width:500px)
